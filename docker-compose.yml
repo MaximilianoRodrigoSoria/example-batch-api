@@ -14,3 +14,17 @@ services:
       POSTGRES_PASSWORD: '1q2w3e4r'
     ports:
       - '5432:5432'
+  wiremock:
+    container_name: wiremock
+    image: rodolpheche/wiremock
+    ports:
+      - "9001:8080"
+    volumes:
+      - ./wiremock/mappings:/home/wiremock/mappings
+      - ./wiremock/__files:/home/wiremock/__files
+    command: --verbose
+    networks:
+      - batch-network
+
+networks:
+  batch-network:
