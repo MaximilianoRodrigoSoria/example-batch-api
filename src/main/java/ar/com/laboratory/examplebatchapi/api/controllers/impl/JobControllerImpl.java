@@ -1,7 +1,7 @@
-package ar.com.laboratory.examplebatchapi.api.controller.impl;
+package ar.com.laboratory.examplebatchapi.api.controllers.impl;
 
 
-import ar.com.laboratory.examplebatchapi.api.controller.JobController;
+import ar.com.laboratory.examplebatchapi.api.controllers.JobController;
 import lombok.AllArgsConstructor;
 import org.springframework.batch.core.Job;
 import org.springframework.batch.core.JobParameters;

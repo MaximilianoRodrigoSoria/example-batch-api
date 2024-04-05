@@ -1,4 +1,4 @@
-package ar.com.laboratory.examplebatchapi.api.controller;
+package ar.com.laboratory.examplebatchapi.api.controllers;
 
 import io.swagger.v3.oas.annotations.Operation;
 import io.swagger.v3.oas.annotations.media.Content;
