@@ -14,6 +14,6 @@ public class PriceDollarServiceImpl implements PriceDollarService{
 
     @Override
     public Double getPriceDollar(DollarType dollarType) {
-        return priceDollarClient.getPriceDollar().getVenta();
+        return priceDollarClient.getDollarPrice().getVenta();
     }
 }

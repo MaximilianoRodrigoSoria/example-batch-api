@@ -1,4 +1,4 @@
-package ar.com.laboratory.examplebatchapi.jobs;
+package ar.com.laboratory.examplebatchapi.batch.jobs;
 
 
 import lombok.AllArgsConstructor;
@@ -16,9 +16,9 @@ import org.springframework.stereotype.Component;
 public class ProductJob {
 
     @Bean(name = "firstBatchJob")
-    public Job job(JobRepository jobRepository,  @Qualifier(value = "listStep") Step listStep) {
+    public Job job(JobRepository jobRepository,  @Qualifier(value = "priceToDollarStep") Step priceToDollarStep) {
         return new JobBuilder("firstBatchJob", jobRepository)
-                        .start(listStep)
+                        .start(priceToDollarStep)
                         .build();
     }
 
